@@ -1,0 +1,33 @@
+---
+title: "example_model_sourcing"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(mrgsolve)
+```
+
+By sourcing the model file, the overseer model cache is pulled in and can 
+be used directly. Since it handles everything relative to the Rscript in which 
+is created, rather than where it is being sourced _from_, no changes have to be
+made to how models are constructed, cached, etc.
+
+```{r}
+models <- source("../models/models.R")$value
+```
+
+```{r}
+models$list_models()
+```
+
+```{r}
+models$use("one_cmt_f") %>%
+    ev(amt = 100) %>% mrgsim %>% plot
+```
+
+
+
