@@ -21,5 +21,7 @@ models$add_model(mod_simple)
 # pull in model saved as one_cmt_f.cpp
 models$add_model_file("one_cmt_f")
 
+models$add_model_directory("multiple_models/")
+
 models
 
