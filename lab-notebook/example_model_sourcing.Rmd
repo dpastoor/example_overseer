@@ -31,5 +31,8 @@ one_cmt_f %>%
     ev(amt = 100) %>% mrgsim %>% plot
 ```
 
+```{r}
+devtools::session_info()
+```
 
 
