@@ -1,0 +1,10 @@
+bookdown::gitbook:
+  config:
+    toc:
+      collapse: section
+    edit:
+      link: https://github.com/dpastoor/example_overseer/edit/master/%s
+      text: "Edit"
+    sharing: no
+  css: example_overseer.css
+  

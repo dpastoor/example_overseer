@@ -1,0 +1,8 @@
+rmd_subdir: yes
+rmd_files: [
+  "index.Rmd",
+  "example_model_sourcing.Rmd",
+  "subdir/example_model_sourcing_subdir.Rmd"
+]
+output_dir: "../docs"
+before_chapter_script: "_common.R"
