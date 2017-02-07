@@ -23,13 +23,17 @@ models <- source("../../models/models.R")$value
 Show models in the cache
 
 ```{r}
-models$list_models()
+models$available()
 ```
 
-use directly or save to objects
+use directly or save to objects. The preferred mechanism is to save to an object.
 
 ```{r}
-models$use("mod_simple") %>%
+mod_simple <- models$use("mod_simple") 
+```
+
+```{r }
+mod_simple %>%
     ev(amt = 100) %>% mrgsim %>% plot
 ```
 

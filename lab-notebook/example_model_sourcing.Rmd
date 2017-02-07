@@ -21,11 +21,13 @@ models <- source("../models/models.R")$value
 ```
 
 ```{r}
-models$list_models()
+models$available()
 ```
 
 ```{r}
-models$use("one_cmt_f") %>%
+one_cmt_f <- models$use("one_cmt_f")
+
+one_cmt_f %>%
     ev(amt = 100) %>% mrgsim %>% plot
 ```
 
