@@ -1,11 +1,5 @@
----
-title: "example_model_sourcing_subdir"
-output: html_document
----
+# Sourcing in a subdirectory
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
 
 ```{r}
 library(mrgsolve)
@@ -16,7 +10,7 @@ be used directly. Since it handles everything relative to the Rscript in which
 is created, rather than where it is being sourced _from_, no changes have to be
 made to how models are constructed, cached, etc.
 
-```{r}
+```{r, eval=F}
 models <- source("../../models/models.R")$value
 ```
 

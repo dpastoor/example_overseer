@@ -1,11 +1,4 @@
----
-title: "example_model_sourcing"
-output: html_document
----
-
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
-```
+# Sourcing models
 
 ```{r}
 library(mrgsolve)
